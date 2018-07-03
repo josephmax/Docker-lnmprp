@@ -1,3 +1,7 @@
+Added redis & phalcon extension.
+
+Thanks to the origin repository: [dnmp](https://github.com/yeszao/dnmp)
+
 # dnmp
 Docker deploying Nginx MySQL PHP7 in one key, support full feature functions.
 
