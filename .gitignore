@@ -1,5 +1,4 @@
 .*
 !.gitignore
-!site*.conf
-!site*/
-/EstateERP/
+www/*
+conf/conf.d*
