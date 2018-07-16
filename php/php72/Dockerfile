@@ -101,11 +101,11 @@ RUN apt-get update \
 ENV PHALCON_VERSION 3.4.0
 
 RUN cd ~ && \
-    curl -LO https://github.com/phalcon/cphalcon/archive/vPHALCON_VERSION.tar.gz && \
-    tar -zxvf vPHALCON_VERSION.tar.gz && \
-    cd cphalcon-PHALCON_VERSION/build && \
+    curl -LO https://github.com/phalcon/cphalcon/archive/v$PHALCON_VERSION.tar.gz && \
+    tar -zxvf v$PHALCON_VERSION.tar.gz && \
+    cd cphalcon-$PHALCON_VERSION/build && \
     ./install && \
-    rm -rf ~/cphalcon-PHALCON_VERSION ~/vPHALCON_VERSION.tar.gz
+    rm -rf ~/cphalcon-$PHALCON_VERSION ~/v$PHALCON_VERSION.tar.gz
 
 ENV PHPREDIS_VERSION 3.1.3
 
